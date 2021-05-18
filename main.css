@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+  list-style: none;
+
+  font-size: 1.2rem;
+  padding-inline-start: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+
+  height: 100vh;
+}
+
+.app .app-name {
+  margin: 8px;
+}
+
+.app .list-options {
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 300px;
+
+  border-right: 1px solid #c2c2c2;
+}
+
+.app .list-options .list-options-menu {
+  padding: 8px;
+}
+
+.app .list-options .list-options-menu li {
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #8d8d8d;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+.app .list-options .list-options-menu li:hover {
+  color: #000;
+
+  transition: 0.5s;
+  
+  transform: scale(1.010);
+}
+
+.app .list-options .list-options-menu li span:nth-child(1) {
+  position: relative;
+}
+
+.app .list-options .list-options-menu li span:nth-child(1) .badge {
+  position: absolute;
+
+  right: -25px;
+  background-color: var(--bs-dark);
+
+  font-size: .7rem;
+  visibility: hidden;
+}
+
+.app .list-options .list-options-menu li:hover span:nth-child(1) .badge {
+  transition: .1s;
+
+  visibility: visible;
+}
+
+.app .list-options .list-options-menu .material-icons {
+  width: 24px;
+  height: 24px;
+}
+.app .main-view {
+  flex: 1;
+}
+
+.app .list-header {
+  position: relative;
+
+  background-color: #1565c0;
+  color: #fff;
+
+  height: 20%;
+}
+
+.app .list-header .material-icons.options {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border-radius: 2px;
+  color: #b8b8b8;
+
+  margin: 4px;
+}
+
+.app .list-header .material-icons:hover {
+  color: #fff;
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.app .todo-list {
+  background-color: #f5f5f5;
+}
+
+.app .todo-list .list .material-icons {
+  cursor: pointer;
+
+  color: #8d8d8d;
+}
+
+.app .todo-list .list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4px;
+}
+
+.app .todo-list .list li:hover {
+  background-color: #b8b8b8;
+
+  cursor: pointer;
+  
+  transition: 0.5s;
+}
+
+.app .todo-list .list li span[data-favorated="true"] {
+  color: #000;
+}
+
+.app .todo-list .list li .material-icons:hover {
+  transition: 0.4s;
+  color: #000;
+}
+
+.app .todo-list .list li span:nth-child(2) {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.app .create-task {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.app .create-task span:nth-child(1) {
+  cursor: pointer;
+}
+
+.app .input-new-task {
+  margin-right: 4px;
+  padding: 4px;
+  
+  flex: 1;
+}
+
+.app .more-options .create-list {
+  display: flex;
+  align-items: center;
+}
+
+.app .more-options .create-list span:nth-child(1) {
+  cursor: pointer;
+}
+
+.app .more-options .more-list-options li {
+  padding: 4px;
+  cursor: pointer;
+
+  color: #8d8d8d;
+}
+
+.app .more-options .more-list-options li:hover {
+  transform: scale(1.01);
+  color: #000;
+
+  transition: 0.5s;
+} 
